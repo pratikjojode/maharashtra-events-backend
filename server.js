@@ -11,7 +11,7 @@ const app = express();
 app.use(morgan("dev"));
 app.use(cors());
 
-// Health check route
+
 app.get("/", (req, res) => {
   res.send("API is working 🚀");
 });
