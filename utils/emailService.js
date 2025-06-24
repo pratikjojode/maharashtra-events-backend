@@ -1,4 +1,4 @@
-// emailService.js
+
 import nodemailer from "nodemailer";
 
 export const sendReminderEmail = async (toEmail, name) => {

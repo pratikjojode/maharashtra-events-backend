@@ -6,7 +6,7 @@ dotenv.config();
 export const getAttendanceData = async (req, res) => {
   const { GOOGLE_API_KEY, SHEET_ID, SHEET_NAME } = process.env;
 
-  // Added sheet range to limit fetched data
+
   const sheetRange = "A1:Z1000";
 
   const url = `https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/${encodeURIComponent(
